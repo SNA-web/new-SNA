@@ -1,21 +1,99 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  	  <meta charset="UTF-8"/>
-  	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  	  <title>Simple Web Page with Navigation</title>
-  	  <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-       <nav>
-       <ul class="nav-menu">
-            <li><a href="#home">Home</a></li> 
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>    
-        </nav>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple webpage with a background image and navigation tabs</p>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:url('1.jpg') no-repeat center center/cover;
+    min-height:100vh;
+    color:white;
+    text-align:center;
+}
+
+nav{
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:8px 12px;
+}
+
+nav ul li a:hover{
+    background:rgba(255,255,255,0.3);
+    border-radius:5px;
+}
+
+.container{
+    margin-top:100px;
+}
+
+h1{
+    font-size:50px;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:#007BFF;
+    color:white;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>This page uses HTML, CSS, and JavaScript in a single file.</p>
+    <button onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+function showMessage() {
+    alert("Welcome to my website!");
+}
+</script>
+
+</body>
+</html>
